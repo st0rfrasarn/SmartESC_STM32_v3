@@ -14,6 +14,10 @@ source='build/EBiCS_Firmware2.bin'
 destination='tools/zip_output/FIRM.bin'
 shutil.copyfile(source, destination)
 
+source2='build/EBiCS_Firmware2.elf'
+destination2='tools/zip_output/FIRM.elf'
+shutil.copyfile(source, destination)
+
 
 hfi = open('tools/zip_output/FIRM.bin', 'rb')
 hfo = open('tools/zip_output/FIRM.bin.enc', 'wb')
